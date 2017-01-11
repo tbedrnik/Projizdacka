@@ -165,10 +165,6 @@ public class PridatActivity extends AppCompatActivity {
         RBS.setOnClickListener(radio_listener);
     }
 
-    hint.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-
-    });
-
     private OnClickListener radio_listener = new OnClickListener() {
         @Override
         public void onClick(View v) {
