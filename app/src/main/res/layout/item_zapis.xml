@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_marginBottom="15dp"
+    android:footerDividersEnabled="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="#atr1"
+        android:id="@+id/zatr1"
+        android:layout_below="@+id/zdatum"
+        android:layout_alignStart="@+id/zdatum"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="#atr2"
+        android:id="@+id/zatr2"
+        android:layout_below="@+id/zatr1"
+        android:layout_alignStart="@+id/zatr1"
+        android:textColor="#0a0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="#tach"
+        android:id="@+id/ztach"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="#atr3"
+        android:id="@+id/zatr3"
+        android:textColor="#000"
+        android:layout_below="@+id/ztach"
+        android:layout_alignEnd="@+id/ztach" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="#atr4"
+        android:id="@+id/zatr4"
+        android:textColor="#0a0"
+        android:layout_below="@+id/zatr3"
+        android:layout_alignEnd="@+id/zatr3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="#datum"
+        android:id="@+id/zdatum"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/zatr3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="71dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ikona"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/zatr1"
+        android:layout_marginEnd="11dp" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Projížďačka</string>
+    <string name="action_settings">Settings</string>
+    <string name="headerText">Projížďačka</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string-array name="blabla">
+        <item>Brno</item>
+        <item>Praha</item>
+        <item>Louňovice</item>
+    </string-array>
+</resources>

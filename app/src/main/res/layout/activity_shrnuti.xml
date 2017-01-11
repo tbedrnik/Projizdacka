@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shrnuti"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+
+    tools:context="com.example.xbedt01.projizdacka.ShrnutiActivity">
+
+    <RelativeLayout
+        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:text="X,XX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textColor="#fff"
+            android:id="@+id/spoil1"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:text="Kč za 1 km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spopis1"
+            android:textColor="#050"
+            android:layout_below="@+id/spoil1"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:text="XXX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textColor="#fff"
+            android:id="@+id/spoil2"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:text="km za prosinec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spopis2"
+            android:textColor="#050"
+            android:layout_below="@+id/spoil2"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:text="Kč za vše"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spopis3"
+            android:textColor="#050"
+            android:layout_below="@+id/spoil3"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="XXXXX,XX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textColor="#fff"
+            android:id="@+id/spoil3"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:text="X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textColor="#fff"
+            android:id="@+id/spoil5"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:text="návštěv servisu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spopis5"
+            android:textColor="#050"
+            android:layout_below="@+id/spoil5"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:text="X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textColor="#fff"
+            android:id="@+id/spoil4"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:text="doplnění paliva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spopis4"
+            android:textColor="#050"
+            android:layout_below="@+id/spoil4"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

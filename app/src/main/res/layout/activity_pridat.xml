@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pridat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.xbedt01.projizdacka.PridatActivity">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jízda"
+            android:ems="5"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rbb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Benzín"
+            android:ems="5"
+            android:checked="false"/>
+        <RadioButton
+            android:id="@+id/rbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servis"
+            android:ems="5"
+            android:checked="false"/>
+    </RadioGroup>
+
+    <ViewFlipper
+        android:id="@+id/switcher"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/rg"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Datum:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jdatum"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Místo:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jatr1"
+                android:layout_marginTop="26dp"
+                android:layout_below="@+id/jdatum"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Počet km:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jatr2"
+                android:layout_below="@+id/jatr1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="26dp" />
+            <TextView
+                android:text="Stav tachometru:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jtach"
+                android:layout_below="@+id/jatr2"
+                android:layout_marginTop="26dp"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Spotřeba:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jatr3"
+                android:layout_marginTop="26dp"
+                android:layout_below="@+id/jtach"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Teoretická cena:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jatr4"
+                android:layout_below="@+id/jatr3"
+                android:layout_marginTop="26dp"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Datum:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bdatum"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:text="Benzínka:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/batr1"
+            android:layout_below="@+id/bdatum"
+            android:layout_marginTop="26dp"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:text="Cena:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/batr2"
+            android:layout_below="@+id/batr1"
+            android:layout_marginTop="26dp"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:text="Cena za litr:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btach"
+            android:layout_below="@+id/batr2"
+            android:layout_marginTop="26dp"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:text="Počet litrů:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/batr3"
+            android:layout_below="@+id/btach"
+            android:layout_alignEnd="@+id/batr4"
+            android:layout_marginTop="26dp"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:text="Teoretický dojezd:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/batr4"
+            android:layout_below="@+id/batr3"
+            android:layout_marginTop="26dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Datum:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sdatum"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Servis čeho:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satr1"
+                android:layout_below="@+id/sdatum"
+                android:layout_marginTop="26dp"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="Cena:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satr2"
+                android:layout_below="@+id/satr1"
+                android:layout_marginTop="26dp"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_below="@+id/udatum"
+        android:layout_alignStart="@+id/udatum"
+        android:id="@+id/uatr1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/uatr1"
+        android:layout_alignStart="@+id/uatr1"
+        android:id="@+id/uatr2" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/uatr2"
+        android:layout_alignStart="@+id/uatr2"
+        android:id="@+id/utach" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/uatr4"
+        android:layout_below="@+id/uatr3"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Uložit"
+        android:id="@+id/button"
+        android:layout_below="@+id/uatr4"
+        android:layout_centerHorizontal="true"
+        android:onClick="ulozit"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/udatum"
+        android:layout_below="@+id/rg"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/uatr3"
+        android:layout_below="@+id/utach"
+        android:layout_alignParentEnd="true" />
+
+    <AutoCompleteTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/auto_misto"
+        android:layout_alignBaseline="@+id/uatr1"
+        android:layout_alignBottom="@+id/uatr1"
+        android:layout_alignStart="@+id/uatr1"
+        android:layout_alignParentEnd="true">
+
+    </AutoCompleteTextView>
+
+</RelativeLayout>
