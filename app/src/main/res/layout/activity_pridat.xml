@@ -187,6 +187,7 @@
         android:ems="10"
         android:layout_below="@+id/udatum"
         android:layout_alignStart="@+id/udatum"
+        android:visibility="invisible"
         android:id="@+id/uatr1" />
 
     <EditText
@@ -249,8 +250,10 @@
         android:layout_alignBaseline="@+id/uatr1"
         android:layout_alignBottom="@+id/uatr1"
         android:layout_alignStart="@+id/uatr1"
-        android:layout_alignParentEnd="true">
-
-    </AutoCompleteTextView>
+        android:layout_alignParentEnd="true"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="textNoSuggestions"
+        android:imeOptions="actionNext" />
 
 </RelativeLayout>
